@@ -2,8 +2,8 @@ public class SearchAlgorithm {
 
     public static int binarySearch(int[] arr, int number) {
         SortAlgorithm.bubbleSort(arr);
-        int low = arr[0];
-        int hi = arr[arr.length - 1];
+        int low = 0;
+        int hi = arr.length - 1;
         int mid = (hi + low) / 2;
         while (low <= hi) {
 
